@@ -1364,7 +1364,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .our-services{
-	padding: 100px 0;
+	padding: 50px 0;
 }
 
 .service-item{
@@ -2326,7 +2326,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .our-testimonials{
-	padding: 100px 0;
+	padding: 50px 0;
 }
 
 .testimonial-slider .swiper-wrapper{
@@ -2500,7 +2500,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .main-footer{
-	padding: 100px 0 0;
+	padding: 50px 0 0;
 	margin-bottom: 50px;
 }
 
@@ -4223,7 +4223,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-testimonials{
-	padding: 100px 0 70px;
+	padding: 50px 0 70px;
 }
 
 .page-testimonials .testimonial-item{
@@ -4801,10 +4801,6 @@ header.main-header .header-sticky.active{
 	.about-counter-title h2{
 		width: 85px;
 		font-size: 36px;
-	}
-
-	.our-services{
-		padding: 50px 0;
 	}
 
 	.service-item{
