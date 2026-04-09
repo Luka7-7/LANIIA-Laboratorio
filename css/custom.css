@@ -5221,11 +5221,56 @@ header.main-header .header-sticky.active{
 
 	.service-discover-list ul li{
 		width: calc(50% - 10px);
-		font-size: 14px;
-		border-radius: 12px;
-		padding: 12px 12px 12px 35px;
-		margin-bottom: 0;
 	}
+}
+
+/* Modal Team Styles */
+.modal-body .page-team-single {
+	padding: 0;
+}
+
+.modal-body .team-about-box {
+	margin-bottom: 0;
+	display: block;
+	flex-wrap: unset;
+	gap: 0;
+}
+
+.modal-body .team-single-image,
+.modal-body .team-about-content {
+	width: 100% !important;
+}
+
+.modal-body .team-contact-list {
+	display: block !important;
+	visibility: visible !important;
+	opacity: 1 !important;
+	max-height: none !important;
+	overflow: visible !important;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+.modal-body .team-contact-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.modal-body .team-contact-item .icon-box {
+	flex-shrink: 0;
+	margin-right: 15px;
+}
+
+.modal-body .team-contact-content {
+	word-break: break-word;
+	overflow-wrap: break-word;
+}
+
+.modal-body .team-contact-content h3 {
+	word-wrap: break-word;
+	font-size: 16px;
+}
 
 	.service-discover-list ul li::before{
 		top: 14px;
@@ -5621,7 +5666,7 @@ header.main-header .header-sticky.active{
 	.error-page-image img{
 		max-width: 80%;
 	}
-}
+
 
 @media only screen and (max-width: 767px){
 
