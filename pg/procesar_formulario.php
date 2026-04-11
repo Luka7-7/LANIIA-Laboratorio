@@ -1,6 +1,6 @@
 <?php
 // Configura tu correo destino
-$destinatario = "luis_uan@hotmail.com";
+$destinatario = "22014349@uan.edu.mx";
 $asunto = "Nuevo mensaje desde el formulario de contacto";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
