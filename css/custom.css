@@ -282,6 +282,48 @@ body{
             color: #fff;
             box-shadow: 0 5px 15px rgba(0,86,179,0.3);
         }
+/* Media Queries para Responsividad */
+
+/* Tablets (iPad y dispositivos medianos) */
+@media (max-width: 991px) {
+    .section-padding {
+        padding: 60px 0;
+    }
+    .service-card {
+        padding: 40px 30px;
+    }
+    .service-card h3 {
+        font-size: 19px;
+    }
+}
+
+/* Móviles (Pantallas pequeñas) */
+@media (max-width: 767px) {
+    .section-padding {
+        padding: 50px 0;
+    }
+    .service-card {
+        padding: 35px 25px;
+        margin-bottom: 20px; /* Reducimos el espacio entre cards */
+    }
+    .service-card h3 {
+        font-size: 18px;
+        min-height: auto; /* En móvil no hace falta forzar la altura */
+        margin-bottom: 15px;
+    }
+    .service-card p {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    .service-icon {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .btn-service {
+        width: 100%; /* El botón se expande para ser más fácil de presionar */
+        padding: 10px 20px;
+    }
+}
 
 .row.no-gutters > *{
     padding-right: 0px;
