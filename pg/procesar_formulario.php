@@ -10,6 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email    = htmlspecialchars(trim($_POST['email']));
     $telefono = htmlspecialchars(trim($_POST['phone']));
     $mensaje  = htmlspecialchars(trim($_POST['message']));
+    $empresa  = htmlspecialchars(trim($_POST['empresa'])); // Campo opcional
 
     // Validar campos obligatorios
     if (empty($nombre) || empty($apellido) || empty($email) || empty($telefono)) {
@@ -30,6 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     Nombre: $nombre $apellido
     Email: $email
     Teléfono: $telefono
+    Empresa: $empresa
 
     Mensaje:
     $mensaje
