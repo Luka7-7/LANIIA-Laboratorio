@@ -1108,7 +1108,110 @@ header.main-header .header-sticky.active{
 	color: var(--white-color);
 	margin: 0;
 }
+.service-card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+    position: relative;
+    z-index: 1;
+}
 
+.service-card-header h3 {
+    margin-bottom: 0;
+	color: #fff;
+	flex: 1;
+    min-width: 0;
+    line-height: 1.3;
+    word-break: break-word;
+}
+.service-card {
+    position: relative;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 40px 30px 35px;
+    transition: all 0.4s ease;
+    z-index: 1;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, transparent 60%);
+    border-radius: 16px;
+    transition: opacity 0.4s ease;
+    opacity: 0;
+    z-index: 0;
+}
+
+.service-card:hover::before {
+    opacity: 1;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.service-card-bg-icon {
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    opacity: 0.07;
+    transition: all 0.4s ease;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.service-card:hover .service-card-bg-icon {
+    opacity: 0.13;
+    transform: scale(1.08) rotate(-5deg);
+}
+
+.service-card-icon {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    margin-bottom: 22px;
+    position: relative;
+    z-index: 1;
+    filter: brightness(0) invert(1);
+}
+
+.service-card-body {
+    position: relative;
+    z-index: 1;
+}
+
+.service-card-body h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.service-card-body p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 0;
+}
+
+.service-card-divider {
+    width: 36px;
+    height: 2px;
+    background: currentColor;
+    margin-bottom: 14px;
+    opacity: 0.5;
+    border-radius: 2px;
+}
 .satisfy-client-content h3{
 	font-size: 16px;
 	font-weight: 600;
@@ -1131,6 +1234,32 @@ header.main-header .header-sticky.active{
 	border-radius: 50%;
 	animation: infiniterotate 20s infinite linear;
 }
+
+/* Override cards en página de servicios */
+.services-section .service-card {
+    background: rgba(255, 255, 255, 0.04) !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+}
+
+.services-section .service-card h3 {
+    color: #fff !important;
+}
+
+.services-section .service-card p {
+    color: rgba(255, 255, 255, 0.65) !important;
+}
+
+.services-section .service-card .btn-service {
+    color: rgba(255, 255, 255, 0.85) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.services-section .service-card .service-card-divider {
+    background: rgba(255, 255, 255, 0.3);
+}
+
 
 @keyframes infiniterotate{
     from{
@@ -1156,14 +1285,19 @@ header.main-header .header-sticky.active{
 	z-index: 1;
 }
 
-.scrolling-ticker-box{
-	--gap: 30px;
-	position: relative;
-	display: flex;
-	overflow: hidden;
-	user-select: none;
-	gap: var(--gap);
-	align-items: center;
+.scrolling-ticker-box {
+    --gap: 30px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    gap: var(--gap);
+    align-items: center;
+
+    /* Corrección para Safari y otros navegadores */
+    -webkit-user-select: none; /* Safari e iOS */
+    -moz-user-select: none;    /* Firefox antiguo */
+    -ms-user-select: none;     /* Internet Explorer/Edge antiguo */
+    user-select: none;         /* Estándar (Chrome, Edge, Firefox moderno) */
 }
 
 .scrolling-content{
@@ -1449,8 +1583,8 @@ header.main-header .header-sticky.active{
 	color: var(--white-color);
 	border: 1px solid var(--dark-divider-color);
 	background: var(--dark-divider-color);
-	backdrop-filter: blur(7px);
 	-webkit-backdrop-filter: blur(7px);
+	backdrop-filter: blur(7px);
 	border-radius: 30px;
 	padding: 7px 20px;
 	transition: all 0.4s ease-in-out;
@@ -1693,8 +1827,8 @@ header.main-header .header-sticky.active{
 	display: block;
 	background: var(--dark-divider-color);
 	border: 1px solid var(--dark-divider-color);
-	backdrop-filter: blur(25px);
 	-webkit-backdrop-filter: blur(25px);
+	backdrop-filter: blur(25px);
 	border-radius: 10px;
 	padding: 25px;
 }
@@ -1850,8 +1984,8 @@ header.main-header .header-sticky.active{
     font-weight: 600;
     color: var(--primary-color);
     background: var(--accent-color);
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-stroke: 2px transparent;
 	border-bottom: 1px solid var(--dark-divider-color);
 	padding-bottom: 20px;
@@ -4613,8 +4747,8 @@ header.main-header .header-sticky.active{
 	border: 1px solid var(--dark-divider-color);
 	border-radius: 20px;
 	padding: 30px;
-	backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
 	z-index: 1;
 }
 
