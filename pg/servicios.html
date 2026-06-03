@@ -204,122 +204,242 @@
 
 <!-- ==================== MODALES ==================== -->
 
-<!-- Modal Microbiología -->
 <div class="modal fade" id="modalMicrobiologia" tabindex="-1" aria-labelledby="modalMicrobiologiaLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content modal-dark" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 16px;">
-            <div class="modal-header">
+        <div class="modal-content modal-dark" style="background-color: #11141a; color: #ffffff; border: 1px solid rgba(255,255,255,0.1); border-radius: 16px;">
+            <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.1);">
                 <div class="service-card-header mb-0">
                     <img class="service-card-icon" src="../images/Icono_Microbiologia.png" alt="Microbiología">
-                    <h5 class="modal-title" id="modalMicrobiologiaLabel">Microbiología</h5>
+                    <h5 class="modal-title" id="modalMicrobiologiaLabel" style="color: #ffffff;">Microbiología</h5>
                 </div>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
-            <div class="modal-body">
-                <p>Nuestro servicio de microbiología ofrece análisis integrales para la detección e identificación de microorganismos indicadores y patógenos en alimentos, agua y muestras ambientales.</p>
-                <p>Contamos con técnicas de microbiología tradicional y molecular que nos permiten caracterizar bacterias, hongos, levaduras y virus con altos estándares de calidad.</p>
-                <ul>
-                    <li>Recuento de mesófilos aerobios, coliformes totales y fecales</li>
-                    <li>Detección de patógenos (<em>Salmonella</em>, <em>Listeria</em>, <em>E. coli</em> O157:H7)</li>
-                    <li>Hongos y levaduras en productos alimentarios</li>
-                    <li>Análisis de agua potable y residual</li>
-                </ul>
+            <div class="modal-body" style="max-height: 65vh; overflow-y: auto;">
+                <p class="mb-4 text-white-50">Nuestro servicio de microbiología ofrece análisis integrales bajo estrictos métodos de referencia oficiales (Normas Oficiales Mexicanas - NOM) y reconocimiento de validez legal sanitaria.</p>
+                
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 15px; margin-bottom: 5px;">Coliformes totales y fecales</h6>
+                    <p class="small text-white-50 mb-1">Determinación e indicadores de condiciones higiénicas y contaminación sanitaria.</p>
+                    <p class="small mb-1" style="color: #00ffff; font-weight: 500;"><i class="fa-solid fa-file-shield me-1"></i>Método de referencia: NOM-210-SSA1-2014, Apéndice H Normativo.</p>
+                    <p class="small mb-3" style="color: #a8ffb2; font-weight: 400;"><i class="fa-solid fa-certificate me-1"></i>Acreditación ema A.C No. A-1501-135/22</p>
+                    <a href="contactanos.html?servicio=micro-coliformes" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 12px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 15px; margin-bottom: 5px;">Escherichia coli</h6>
+                    <p class="small text-white-50 mb-1">Identificación analítica específica de contaminación de origen fecal directo.</p>
+                    <p class="small mb-1" style="color: #00ffff; font-weight: 500;"><i class="fa-solid fa-file-shield me-1"></i>Método de referencia: NOM-210-SSA1-2014, Apéndice H Normativo.</p>
+                    <p class="small mb-3" style="color: #a8ffb2; font-weight: 400;"><i class="fa-solid fa-certificate me-1"></i>Acreditación ema A.C. No. A-1501-135/22</p>
+                    <a href="contactanos.html?servicio=micro-ecoli" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 12px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 15px; margin-bottom: 5px;">Salmonella spp</h6>
+                    <p class="small text-white-50 mb-1">Ensayos microbiológicos de seguridad obligatorios orientados a salvaguardar la inocuidad.</p>
+                    <p class="small mb-3" style="color: #00ffff; font-weight: 500;"><i class="fa-solid fa-file-shield me-1"></i>Método de referencia: NOM-210-SSA1-2014, Apéndice B Normativo.</p>
+                    <a href="contactanos.html?servicio=micro-salmonella" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 12px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 15px; margin-bottom: 5px;">Staphylococcus aureus</h6>
+                    <p class="small text-white-50 mb-1">Detección y control de microorganismos indicadores de manipulación e higiene deficiente.</p>
+                    <p class="small mb-3" style="color: #00ffff; font-weight: 500;"><i class="fa-solid fa-file-shield me-1"></i>Método de referencia: NOM-210-SSA1-2014.</p>
+                    <a href="contactanos.html?servicio=micro-staphylococcus" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 12px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 15px; margin-bottom: 5px;">Cuenta mesofílica</h6>
+                    <p class="small text-white-50 mb-1">Cuantificación general de poblaciones bacterianas mesófilas.</p>
+                    <p class="small mb-3" style="color: #00ffff; font-weight: 500;"><i class="fa-solid fa-file-shield me-1"></i>Método de referencia: NOM-092-SSA1-1994.</p>
+                    <a href="contactanos.html?servicio=micro-cuenta-mesofilica" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 12px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 15px; margin-bottom: 5px;">Hongos y levaduras</h6>
+                    <p class="small text-white-50 mb-1">Evaluación de indicadores de deterioro para estimar el tiempo de anaquel comercial.</p>
+                    <p class="small mb-3" style="color: #00ffff; font-weight: 500;"><i class="fa-solid fa-file-shield me-1"></i>Método de referencia: NOM-111-SSA1-1994.</p>
+                    <a href="contactanos.html?servicio=micro-hongos" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 12px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 15px; margin-bottom: 5px;">Mesofílicos aerobios</h6>
+                    <p class="small text-white-50 mb-1">Análisis global de microorganismos viables desarrollados en condiciones de aerobiosis.</p>
+                    <p class="small mb-3" style="color: #00ffff; font-weight: 500;"><i class="fa-solid fa-file-shield me-1"></i>Método de referencia: NOM-092-SSA1-1994.</p>
+                    <a href="contactanos.html?servicio=micro-mesofilicos-aerobios" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 12px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 15px; margin-bottom: 5px;">Microorganismos psicrófilos</h6>
+                    <p class="small text-white-50 mb-1">Control analítico preventivo en productos sometidos a bajas temperaturas y refrigeración.</p>
+                    <p class="small mb-3" style="color: #00ffff; font-weight: 500;"><i class="fa-solid fa-file-shield me-1"></i>Método de referencia: NOM-092-SSA1-1994.</p>
+                    <a href="contactanos.html?servicio=micro-psicrofilos" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 12px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 15px; margin-bottom: 5px;">Monitoreo ambiental</h6>
+                    <p class="small text-white-50 mb-2">Evaluación microbiológica de aire, superficies vivas e inertes para garantizar la higiene y mitigar riesgos de contaminación cruzada en áreas de proceso.</p>
+                    <a href="contactanos.html?servicio=micro-monitoreo-ambiental" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 12px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+
             </div>
-            <div class="modal-footer">
-                <a href="contactanos.html" class="btn-default btn-highlighted">Contratar Servicio</a>
-                <button type="button" class="btn-default btn-border" data-bs-dismiss="modal">Cerrar</button>
+            <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                <button type="button" class="btn btn-danger py-2 px-4 text-white font-weight-bold" data-bs-dismiss="modal" style="background-color: #dc3545; border: none; border-radius: 30px; font-size: 14px;">Cerrar</button>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Modal Inmunodiagnóstico -->
 <div class="modal fade" id="modalInmunodiagnostico" tabindex="-1" aria-labelledby="modalInmunodiagnosticoLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content modal-dark" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 16px;">
-            <div class="modal-header">
+        <div class="modal-content modal-dark" style="background-color: #11141a; color: #ffffff; border: 1px solid rgba(255,255,255,0.1); border-radius: 16px;">
+            <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.1);">
                 <div class="service-card-header mb-0">
                     <img class="service-card-icon" src="../images/Icono_Inmunodiagnostico.png" alt="Inmunodiagnóstico">
-                    <h5 class="modal-title" id="modalInmunodiagnosticoLabel">Inmunodiagnóstico</h5>
+                    <h5 class="modal-title" id="modalInmunodiagnosticoLabel" style="color: #ffffff;">Inmunodiagnóstico</h5>
                 </div>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
-            <div class="modal-body">
-                <p>Aplicamos técnicas inmunológicas avanzadas para la detección específica de antígenos y anticuerpos en muestras biológicas, alimentarias y ambientales.</p>
-                <p>Nuestros métodos garantizan alta sensibilidad y especificidad en la identificación de agentes infecciosos y contaminantes.</p>
-                <ul>
-                    <li>ELISA directo, indirecto y de captura</li>
-                    <li>Inmunocromatografía (pruebas rápidas)</li>
-                    <li>Western Blot e inmunofluorescencia</li>
-                    <li>Detección de toxinas en alimentos</li>
-                </ul>
+            <div class="modal-body" style="max-height: 65vh; overflow-y: auto;">
+                <p class="mb-4 text-white-50">Aplicamos técnicas inmunológicas avanzadas para la detección específica de antígenos y anticuerpos en muestras biológicas, alimentarias y ambientales con alta especificidad.</p>
+                
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 15px; margin-bottom: 5px;">Detección molecular del virus SARS-CoV-2</h6>
+                    <p class="small text-white-50 mb-1">Diagnóstico y confirmación con los más altos estándares regulatorios de salud.</p>
+                    <p class="small mb-3" style="color: #a8ffb2; font-weight: 400;"><i class="fa-solid fa-certificate me-1"></i>Acreditación InDRE DGE-DDYR-DSAT-5140-2020</p>
+                    <a href="contactanos.html?servicio=inmuno-sars-molecular" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 12px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 15px; margin-bottom: 5px;">Determinación de anticuerpos anti-SARS-CoV-2</h6>
+                    <p class="small text-white-50 mb-2">Evaluación cualitativa y cuantitativa de la respuesta inmune frente al virus.</p>
+                    <a href="contactanos.html?servicio=inmuno-sars-anticuerpos" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 12px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 15px; margin-bottom: 5px;">Patógenos de importancia médica y ambiental</h6>
+                    <p class="small text-white-50 mb-2">Monitoreo específico e identificación analítica de microorganismos patógenos en diversos entornos de interés sanitario.</p>
+                    <a href="contactanos.html?servicio=inmuno-patogenos-medicos" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 12px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 15px; margin-bottom: 5px;">Cuantificación de micotoxinas</h6>
+                    <p class="small text-white-50 mb-1">Análisis e identificación analítica de metabolitos fúngicos tóxicos mediante inmunoensayo:</p>
+                    <ul class="small text-white-50 mb-3" style="padding-left: 20px;">
+                        <li>Ocratoxina A</li>
+                        <li>Fumonisinia</li>
+                        <li>Aflatoxina</li>
+                    </ul>
+                    <a href="contactanos.html?servicio=inmuno-micotoxinas" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 12px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+
             </div>
-            <div class="modal-footer">
-                <a href="contactanos.html" class="btn-default btn-highlighted">Contratar Servicio</a>
-                <button type="button" class="btn-default btn-border" data-bs-dismiss="modal">Cerrar</button>
+            <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                <button type="button" class="btn btn-danger py-2 px-4 text-white font-weight-bold" data-bs-dismiss="modal" style="background-color: #dc3545; border: none; border-radius: 30px; font-size: 14px;">Cerrar</button>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Modal Cromatografía -->
 <div class="modal fade" id="modalCromatografia" tabindex="-1" aria-labelledby="modalCromatografiaLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content modal-dark" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 16px;">
-            <div class="modal-header">
+        <div class="modal-content modal-dark" style="background-color: #11141a; color: #ffffff; border: 1px solid rgba(255,255,255,0.1); border-radius: 16px;">
+            <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.1);">
                 <div class="service-card-header mb-0">
                     <img class="service-card-icon" src="../images/Icono_Cromatografia.png" alt="Cromatografía">
-                    <h5 class="modal-title" id="modalCromatografiaLabel">Cromatografía</h5>
+                    <h5 class="modal-title" id="modalCromatografiaLabel" style="color: #ffffff;">Cromatografía</h5>
                 </div>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
             <div class="modal-body">
-                <p>Realizamos la separación, identificación y cuantificación de compuestos químicos presentes en matrices alimentarias, biológicas y ambientales mediante técnicas cromatográficas de vanguardia.</p>
-                <p>Nuestro equipo especializado permite detectar residuos de plaguicidas, micotoxinas, metales pesados y aditivos con límites de detección ultra-bajos.</p>
-                <ul>
-                    <li>Cromatografía de gases (GC-MS)</li>
-                    <li>Cromatografía líquida de alta resolución (HPLC)</li>
-                    <li>Detección de residuos de plaguicidas en alimentos</li>
-                    <li>Cuantificación de micotoxinas y contaminantes químicos</li>
-                </ul>
+                <p class="mb-4 text-white-50">Separación, identificación y cuantificación de compuestos analíticos complejos a través de instrumentación cromatográfica de vanguardia.</p>
+
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 15px; margin-bottom: 5px;">Determinación de contaminantes emergentes (Bisfenol A)</h6>
+                    <p class="small text-white-50 mb-2">Análisis traza de disruptores endocrinos y compuestos químicos residuales como el Bisfenol A en empaques, agua y alimentos.</p>
+                    <a href="contactanos.html?servicio=croma-contaminantes-emergentes" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 12px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+                
             </div>
-            <div class="modal-footer">
-                <a href="contactanos.html" class="btn-default btn-highlighted">Contratar Servicio</a>
-                <button type="button" class="btn-default btn-border" data-bs-dismiss="modal">Cerrar</button>
+            <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                <button type="button" class="btn btn-danger py-2 px-4 text-white font-weight-bold" data-bs-dismiss="modal" style="background-color: #dc3545; border: none; border-radius: 30px; font-size: 14px;">Cerrar</button>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Modal Asesoría Científica -->
 <div class="modal fade" id="modalAsesoria" tabindex="-1" aria-labelledby="modalAsesoriaLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg dark-section">
-        <div class="modal-content modal-dark" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 16px;">
-            <div class="modal-header">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-dark" style="background-color: #11141a; color: #ffffff; border: 1px solid rgba(255,255,255,0.1); border-radius: 16px;">
+            <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.1);">
                 <div class="service-card-header mb-0">
                     <img class="service-card-icon" src="../images/Icono_Asesoria.png" alt="Asesoría Científica">
-                    <h5 class="modal-title" id="modalAsesoriaLabel">Asesoría Científica</h5>
+                    <h5 class="modal-title" id="modalAsesoriaLabel" style="color: #ffffff;">Asesoría Científica</h5>
                 </div>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
-            <div class="modal-body">
-                <p>Brindamos orientación técnica y científica especializada a empresas, instituciones gubernamentales y organismos del sector salud en materia de inocuidad alimentaria y salud ambiental.</p>
-                <p>Nuestro equipo de profesionales calificados acompaña a los clientes en el cumplimiento de la normatividad vigente y el diseño de estrategias de control de calidad.</p>
-                <ul>
-                    <li>Interpretación de resultados analíticos</li>
-                    <li>Diseño de planes de muestreo y control de calidad</li>
-                    <li>Cumplimiento de normativas NOM y estándares internacionales</li>
-                    <li>Capacitación técnica al personal de laboratorio y producción</li>
-                </ul>
+            <div class="modal-body" style="max-height: 65vh; overflow-y: auto;">
+                <p class="mb-4 text-white-50">LANIIA cuenta con un ecosistema multidisciplinario enfocado en brindar soporte, validación e investigación especializada a través de nuestros 9 pilares fundamentales:</p>
+                
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.04); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 14px; margin-bottom: 4px;">1. Propiedad Intelectual</h6>
+                    <p class="small text-white-50 mb-2">Asesoría especializada en el registro, protección y patentado de invenciones, desarrollos biotecnológicos y marcas científicas.</p>
+                    <a href="contactanos.html?servicio=asesoria-propiedad-intelectual" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 11px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.04); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 14px; margin-bottom: 4px;">2. Citometría de Flujo</h6>
+                    <p class="small text-white-50 mb-2">Análisis óptico avanzado multiparamétrico para la caracterización celular, viabilidad bacteriana y poblaciones del sistema inmune.</p>
+                    <a href="contactanos.html?servicio=asesoria-citometria" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 11px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.04); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 14px; margin-bottom: 4px;">3. Biología Molecular</h6>
+                    <p class="small text-white-50 mb-2">Consultoría estratégica en diseño de métodos de diagnóstico basados en PCR, qPCR, clonación y análisis de ácidos nucleicos.</p>
+                    <a href="contactanos.html?servicio=asesoria-biologia-molecular" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 11px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.04); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 14px; margin-bottom: 4px;">4. Inocuidad Alimentaria</h6>
+                    <p class="small text-white-50 mb-2">Implementación de sistemas de aseguramiento de calidad HACCP, auditorías de higiene y cumplimiento estricto de reglamentaciones de inocuidad.</p>
+                    <a href="contactanos.html?servicio=asesoria-inocuidad" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 11px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.04); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 14px; margin-bottom: 4px;">5. Cromatografía</h6>
+                    <p class="small text-white-50 mb-2">Desarrollo y validación analítica de metodologías cromatográficas a la medida para la industria farmacéutica, química y del agro.</p>
+                    <a href="contactanos.html?servicio=asesoria-cromatografia" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 11px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.04); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 14px; margin-bottom: 4px;">6. Toxicología</h6>
+                    <p class="small text-white-50 mb-2">Estudios consultivos de citotoxicidad, evaluación de riesgos por exposición a químicos y determinación de límites de seguridad biológica.</p>
+                    <a href="contactanos.html?servicio=asesoria-toxicologia" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 11px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.04); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 14px; margin-bottom: 4px;">7. Inmunología</h6>
+                    <p class="small text-white-50 mb-2">Diseño y desarrollo personalizado de anticuerpos monoclonales/policlonales y acoplamiento inmunoensayo de última generación.</p>
+                    <a href="contactanos.html?servicio=asesoria-inmunologia" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 11px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.04); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 14px; margin-bottom: 4px;">8. Microbiología</h6>
+                    <p class="small text-white-50 mb-2">Capacitación técnica corporativa y asesoría técnica ante incidencias por brotes de contaminación patógena en plantas industriales.</p>
+                    <a href="contactanos.html?servicio=asesoria-microbiologia" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 11px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
+
+                <div class="subservicio-item p-3 mb-3" style="background: rgba(255,255,255,0.04); border-radius: 8px; border-left: 4px solid #00ffff;">
+                    <h6 style="color: #ffffff; font-size: 14px; margin-bottom: 4px;">9. Fitoquímica</h6>
+                    <p class="small text-white-50 mb-2">Asesoramiento integral en la caracterización, extracción y aprovechamiento comercial de extractos vegetales de interés industrial.</p>
+                    <a href="contactanos.html?servicio=asesoria-fitoquimica" class="btn btn-sm btn-info text-dark fw-bold py-1 px-3" style="font-size: 11px; border-radius: 4px;">Enviar mensaje</a>
+                </div>
             </div>
-            <div class="modal-footer">
-                <a href="contactanos.html" class="btn-default btn-highlighted">Contratar Servicio</a>
-                <button type="button" class="btn-default btn-danger btn-border" data-bs-dismiss="modal">Cerrar</button>
+            <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                <button type="button" class="btn btn-danger py-2 px-4 text-white font-weight-bold" data-bs-dismiss="modal" style="background-color: #dc3545; border: none; border-radius: 30px; font-size: 14px;">Cerrar</button>
             </div>
         </div>
     </div>
 </div>
-
 
          <!-- Footer inicia -->
     <footer class="main-footer bg-section dark-section">
