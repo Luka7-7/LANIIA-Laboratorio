@@ -15,157 +15,223 @@
          información. Si no tiene perfil (aún), se deja "modal: null"
          y la tarjeta se genera sin enlace a modal.
        --------------------------------------------------------- */
-    const teamMembers = [
-        {
-            img: "../images/team-1.jpg",
-            cardName: "Dr. Ivan Girón",
-            cardRole: "Fundador Signatario",
-            modalId: "teamSingleModal",
-            modal: {
-                fullName: "Dr. Manuel Iván Girón Pérez",
-                role: "Fundador Signatario",
-                bio: [
-                    "Doctor en Ciencias Biomédicas, con orientación en Inmunología. Autor de 70 artículos publicados en revistas científicas internacionales y más de 10 capítulos de libros. Su obra científica ha colectado más de 1000 citas (índice H=21). Ha fundado 2 laboratorios científicos, como son el Laboratorio Nacional LANIIA-Nayarit y el Laboratorio de Inmunotoxicología. Ha dirigido más de 20 tesis de licenciatura, 7 de maestría y 3 de doctorados",
-                    "Dentro de los reconocimientos más importantes que ha recibido, destacan: Premio de Inmunología, Sergio Estrada Parra, otorgado por la Sociedad Mexicana de Inmunología, Medalla al Mérito Nayarit, otorgado por Poder legislativo Nayarit, Medalla a la investigación Científica Nayarit (4 ocasiones). Así como graduado con Mención Honorífica en sus estudios de licenciatura, Maestría y Doctorado, grados otorgados por la UAN, IPN y UdeG, respectivamente. Ha realizado estancias científicas en la Universidad de Lleida, España y en la Universidad Nacional de Córdoba, Argentina."
-                ],
-                email: "ivangiron@uan.edu.mx",
-                experienceText: "Actualmente es Secretario de Investigación y Posgrado de la Universidad Autónoma de Nayarit. Es integrante del Sistema Nacional de Investigadores, Nivel III (CONACyT). Miembro de la Academia Nacional de Medicina de México A.C. y la Academia Mexicana de Ciencias A.C, las dos organizaciones científicas de ingreso competitivo más importantes en México. Profesor investigador de la Universidad Autónoma de Nayarit.",
-                skills: [
-                    { title: "Artículos en revistas científicas", value: "70", percent: 70 },
-                    { title: "Ponencias en Congresos", value: "100", percent: 100 },
-                    { title: "Citas (índice H=21)", value: "1000", percent: 100 }
-                ]
-            }
-        },
-        {
-            img: "../images/team-3.jpg",
-            cardName: "Dra. Adela Bueno",
-            cardRole: "Coordinación de operaciones analíticas",
-            modalId: "teamAdelaBuenoModal",
-            modal: {
-                fullName: "Dra. Adela Yolanda Bueno Durán",
-                role: "Sistema de Gestión de Calidad - Coordinación de operaciones analíticas",
-                bio: [
-                    "Doctorado en Ciencia y Tecnología en Biotecnología Productiva por el Centro de Investigación y Asistencia en Tecnología y Diseño del Estado de Jalisco. A.C. (CIATEJ), una maestría en Ciencias de los Alimentos por la Universidad de Guadalajara y Químico Farmacobiólogo por la Universidad Autónoma de Guadalajara. Docente Investigador en la Universidad Autónoma de Nayarit de la Unidad Académica de Ciencias Químicos Biológicas y Farmacéuticas desde 1995, he participado en impartición de unidades de aprendizaje de: Microbiología General, Microbiología de los Alimentos, Microbiología Sanitaria, Fisiología Bacteriana, Micología, Bacteriología y Hematología Médica. Dirección de tesis de licenciatura y posgrado.",
-                    "Miembro del Sistema Nacional de Investigadoras e Investigadores nivel 1, y miembro del Programa para el Desarrollo Profesional Docente-PRODEP."
-                ],
-                email: "abueno@uan.edu.mx",
-                experienceText: "Coordinador de Operaciones Analíticas en el área de Microbiología de los Alimentos en el Laboratorio Nacional para Investigación en Inocuidad Alimentaria (LANIIA)- Unidad Nayarit. Signatario (2022-2025) por la Entidad Mexicana de Acreditación (ema ac.) bajo la norma NMX-EC-17025-IMNC-2018. Requisitos generales para la competencia de laboratorios de ensayo en la rama de Alimentos, desde el 2017.",
-                skills: [
-                    { title: "Docente Investigador", value: "", percent: 95 },
-                    { title: "Signatario ema (2022-2025)", value: "", percent: 100 },
-                    { title: "Miembro SNII", value: "", percent: 90 }
-                ]
-            }
-        },
-        {
-            img: "../images/team-4.jpg",
-            cardName: "Dr. Francisco Razura",
-            cardRole: "Administrador del Sistema de Gestión de Calidad",
-            titleAttr: "Ver perfil de Dr. Francisco Razura",
-            modalId: null,
-            modal: null
-        },
-        {
-            img: "../images/avatar.webp",
-            cardName: "Dra. Migdalia Navidad",
-            cardRole: "Auxiliar del Sistema de Gestión de Calidad",
-            modalId: null,
-            modal: null
-        },
-        {
-            img: "../images/team-2.jpg",
-            cardName: "Dra. Gladys Toledo",
-            cardRole: "Administración - Coordinación",
-            modalId: "teamGladysToledoModal",
-            modal: {
-                fullName: "Dra. Gladys Alejandra Toledo Ibarra",
-                role: "Sistema de Gestión de Calidad - Administración - Coordinación",
-                bio: [
-                    "Licenciatura en Químico Fármaco Biólogo (2012) y Maestría en Ciencias Biológico Agropecuarias por la Universidad Autónoma de Nayarit (2015). Doctorado en Ciencias Biomédicas por la Universidad Nacional Autónoma de México (2023).",
-                    "Profesora de tiempo completo en la Universidad Autónoma de Nayarit desde 2012. Docente en el programa académico de Licenciatura y Posgrado de la Universidad Autónoma de Nayarit. Miembro del cuerpo académico (consolidado) de Biomedicina Ambiental Traslacional.",
-                    `Autora de 30 artículos científicos con 700 citas. Co-autora de 3 capítulos de libros. Miembro de "Sociedad Mexicana de inmunoendocrinologia" y "Sociedad Mexicana de Inmunología".`,
-                    "Premio estatal a la juventud la categoría de Ciencia y Tecnología, 2013. Miembro del Sistema Nacional de Investigadoras e Investigadores nivel 1, y miembro del Programa para el Desarrollo Profesional Docente-PRODEP desde el 2021.",
-                    "Líneas de investigación: Neuro-Inmuno toxicología de plaguicidas organofosforados. Evaluación de contaminantes clásicos y emergentes."
-                ],
-                email: "gladys.toledo@uan.edu.mx",
-                skills: [
-                    { title: "Artículos científicos", value: "30", percent: 90 },
-                    { title: "Citas de sus artículos", value: "700", percent: 100 },
-                    { title: "Capítulos de libros", value: "3", percent: 80 }
-                ]
-            }
-        },
-        {
-            img: "../images/team-8.jpg",
-            cardName: "M. en C. Ansonny Ojeda",
-            cardRole: "Responsable de Ventas y Atención a clientes",
-            modalId: null,
-            modal: null
-        },
-        {
-            img: "../images/avatar.webp",
-            cardName: "M. en C. Mercedes Zambrano",
-            cardRole: "Auxiliar de Ventas y atención a clientes",
-            modalId: null,
-            modal: null
-        },
-        {
-            img: "../images/avatar.webp",
-            cardName: "M.C.A. Mayra Canales",
-            cardRole: "Administración - Compras",
-            modalId: null,
-            modal: null
-        },
-        {
-            img: "../images/avatar.webp",
-            cardName: "M. en C. Lucia Castillo",
-            cardRole: "Responsable de mantenimiento",
-            modalId: null,
-            modal: null
-        },
-        {
-            img: "../images/avatar.webp",
-            cardName: "M. en C. Ulises Mercado",
-            cardRole: "Auxiliar de mantenimiento",
-            modalId: null,
-            modal: null
-        },
-        {
-            img: "../images/avatar.webp",
-            cardName: "Dr. Daniel Girón",
-            cardRole: "Capacitación continua",
-            modalId: null,
-            modal: null
-        },
-        {
-            img: "../images/avatar.webp",
-            cardName: "M.C.L.V. Mirtha Pulido",
-            cardRole: "Administración",
-            modalId: "teamMirthaPulidoModal",
-            modal: {
-                fullName: "M.C.L.V. Mirtha Elena Pulido Muñoz",
-                role: "Sistema de Gestión de Calidad - Administración",
-                bio: [
-                    "Maestra en Comunicación y Lenguajes Visuales por el Instituto para la Investigación en Comunicación y Cultura ICONOS. Colabora con el Laboratorio Nacional para la Investigación en Inocuidad Alimentaria (LANIIA-Nayarit) y es docente de la Licenciatura en Biomedicina Ambiental Traslacional de la Universidad Autónoma de Nayarit. Forma parte del Comité Editorial de la revista Bio Ciencias (ISSN: 2007-3380) y colabora en la revista de divulgación científica Pardalis. Sus intereses se orientan a la comunicación visual, la divulgación científica y la gestión editorial de publicaciones académicas, incluyendo la estructuración técnica de contenidos científica."
-                ]
-            }
-        },
-        {
-            img: "../images/avatar.webp",
-            cardName: "M.P.D. Anairis Ávila",
-            cardRole: "Administración",
-            modalId: "teamAnairisAvilaModal",
-            modal: {
-                fullName: "M.P.D. Anairis Sol Ávila Ángel",
-                role: "Sistema de Gestión de Calidad - Administración",
-                bio: [
-                    "Es Maestra en Periodismo Digital por la Universidad de Guadalajara y Licenciada en Comunicación y Medios por la Universidad Autónoma de Nayarit."
-                ],
-                experienceText: "Se desempeñó como responsable de agenda de medios en la Dirección de Comunicación Institucional y Social de la Universidad Autónoma de Nayarit (UAN), y como Coordinadora de Divulgación y Difusión Científica en la Secretaría de Investigación y Posgrado de la misma institución. Actualmente está a cargo de la difusión y cobertura institucional de LANIIA Unidad Nayarit."
-            }
+const teamMembers = [
+    {
+        img: "../images/team-1.jpg",
+        cardName: "Dr. Ivan Girón",
+        cardRole: "Fundador Signatario",
+        modalId: "teamSingleModal",
+        modal: {
+            fullName: "Dr. Manuel Iván Girón Pérez",
+            role: "Fundador Signatario",
+            bio: [
+                "Doctor en Ciencias Biomédicas, con orientación en Inmunología. Autor de 70 artículos publicados en revistas científicas internacionales y más de 10 capítulos de libros. Su obra científica ha colectado más de 1000 citas (índice H=21). Ha fundado 2 laboratorios científicos, como son el Laboratorio Nacional LANIIA-Nayarit y el Laboratorio de Inmunotoxicología. Ha dirigido más de 20 tesis de licenciatura, 7 de maestría y 3 de doctorados",
+                "Dentro de los reconocimientos más importantes que ha recibido, destacan: Premio de Inmunología, Sergio Estrada Parra, otorgado por la Sociedad Mexicana de Inmunología, Medalla al Mérito Nayarit, otorgado por Poder legislativo Nayarit, Medalla a la investigación Científica Nayarit (4 ocasiones). Así como graduado con Mención Honorífica en sus estudios de licenciatura, Maestría y Doctorado, grados otorgados por la UAN, IPN y UdeG, respectivamente. Ha realizado estancias científicas en la Universidad de Lleida, España y en la Universidad Nacional de Córdoba, Argentina."
+            ],
+            email: "ivangiron@uan.edu.mx",
+            experienceText: "Actualmente es Secretario de Investigación y Posgrado de la Universidad Autónoma de Nayarit. Es integrante del Sistema Nacional de Investigadores, Nivel III (CONACyT). Miembro de la Academia Nacional de Medicina de México A.C. y la Academia Mexicana de Ciencias A.C, las dos organizaciones científicas de ingreso competitivo más importantes en México. Profesor investigador de la Universidad Autónoma de Nayarit.",
+            skills: [
+                { title: "Artículos en revistas científicas", value: "70", percent: 70 },
+                { title: "Ponencias en Congresos", value: "100", percent: 100 },
+                { title: "Citas (índice H=21)", value: "1000", percent: 100 }
+            ]
         }
-    ];
+    },
+    {
+        img: "../images/team-3.jpg",
+        cardName: "Dra. Adela Bueno",
+        cardRole: "Coordinación de operaciones analíticas",
+        modalId: "teamAdelaBuenoModal",
+        modal: {
+            fullName: "Dra. Adela Yolanda Bueno Durán",
+            role: "Sistema de Gestión de Calidad < Coordinación de operaciones analíticas",
+            bio: [
+                "Doctorado en Ciencia y Tecnología en Biotecnología Productiva por el Centro de Investigación y Asistencia en Tecnología y Diseño del Estado de Jalisco. A.C. (CIATEJ), una maestría en Ciencias de los Alimentos por la Universidad de Guadalajara y Químico Farmacobiólogo por la Universidad Autónoma de Guadalajara. Docente Investigador en la Universidad Autónoma de Nayarit de la Unidad Académica de Ciencias Químicos Biológicas y Farmacéuticas desde 1995, he participado en impartición de unidades de aprendizaje de: Microbiología General, Microbiología de los Alimentos, Microbiología Sanitaria, Fisiología Bacteriana, Micología, Bacteriología y Hematología Médica. Dirección de tesis de licenciatura y posgrado.",
+                "Miembro del Sistema Nacional de Investigadoras e Investigadores nivel 1, y miembro del Programa para el Desarrollo Profesional Docente-PRODEP."
+            ],
+            email: "abueno@uan.edu.mx",
+            experienceText: "Coordinador de Operaciones Analíticas en el área de Microbiología de los Alimentos en el Laboratorio Nacional para Investigación en Inocuidad Alimentaria (LANIIA)- Unidad Nayarit. Signatario (2022-2025) por la Entidad Mexicana de Acreditación (ema ac.) bajo la norma NMX-EC-17025-IMNC-2018. Requisitos generales para la competencia de laboratorios de ensayo en la rama de Alimentos, desde el 2017.",
+            skills: [
+                { title: "Docente Investigador", value: "", percent: 95 },
+                { title: "Signatario ema (2022-2025)", value: "", percent: 100 },
+                { title: "Miembro SNII", value: "", percent: 90 }
+            ]
+        }
+    },
+    {
+        img: "../images/team-4.jpg",
+        cardName: "Dr. Francisco Razura",
+        cardRole: "Administrador del Sistema de Gestión de Calidad",
+        titleAttr: "Ver perfil de Dr. Francisco Razura",
+        modalId: "teamFranciscoRazuraModal",
+        modal: {
+            fullName: "Dr. Francisco Fabián Razura Carmona",
+            role: "Administrador del Sistema de Gestión de Calidad",
+            bio: [],
+            email: "",
+            experienceText: "",
+            skills: []
+        }
+    },
+    {
+        img: "../images/avatar.webp",
+        cardName: "Dra. Migdalia Navidad",
+        cardRole: "Auxiliar del Sistema de Gestión de Calidad",
+        modalId: "teamMigdaliaNavidadModal",
+        modal: {
+            fullName: "Dra. Migdalia Sarahy Navidad Murrieta",
+            role: "Auxiliar del sistema de gestión de calidad",
+            bio: [
+                "Ingeniera bioquímica y maestra en ciencias de los alimentos. Auxiliar del Sistema de Gestión de Calidad y procesos de acreditación, así como responsable de cromatografía del laboratorio LANIIA-Unidad Nayarit. Experiencia en el análisis de alimentos, desarrollo de alimentos con potencial probióticos, análisis cromatográficos y procesos de certificación/acreditación de sistemas de gestión y aseguramiento de la calidad.",
+                "Participación en congresos nacionales e internacionales, reconocida en el año 2020 como “Mujer SISMENEC” por la entidad mexicana de acreditación (ema ac.), miembro de Grupo ema Regional de Nayarit, miembro de la Asociación Mexicana de Ciencia de los Alimentos AMECA A.C y revisor transitorio de revistas nacionales e internacionales."
+            ],
+            email: "",
+            experienceText: "",
+            skills: []
+        }
+    },
+    {
+        img: "../images/team-2.jpg",
+        cardName: "Dra. Gladys Toledo",
+        cardRole: "Administración - Coordinación",
+        modalId: "teamGladysToledoModal",
+        modal: {
+            fullName: "Dra. Gladys Alejandra Toledo Ibarra",
+            role: "Sistema de Gestión de Calidad < Administración – Coordinación",
+            bio: [
+                "Licenciatura en Químico Fármaco Biólogo (2012) y Maestría en Ciencias Biológico Agropecuarias por la Universidad Autónoma de Nayarit (2015). Doctorado en Ciencias Biomédicas por la Universidad Nacional Autónoma de México (2023).",
+                "Profesora de tiempo completo en la Universidad Autónoma de Nayarit desde 2012. Docente en el programa académico de Licenciatura y Posgrado de la Universidad Autónoma de Nayarit. Miembro del cuerpo académico (consolidado) de Biomedicina Ambiental Traslacional.",
+                `Autora de 30 artículos científicos con 700 citas. Co-autora de 3 capítulos de libros. Miembro de "Sociedad Mexicana de inmunoendocrinologia" y "Sociedad Mexicana de Inmunología".`,
+                "Premio estatal a la juventud la categoría de Ciencia y Tecnología, 2013. Miembro del Sistema Nacional de Investigadoras e Investigadores nivel 1, y miembro del Programa para el Desarrollo Profesional Docente-PRODEP desde el 2021.",
+                "Líneas de investigación: Neuro-Inmuno toxicología de plaguicidas organofosforados. Evaluación de contaminantes clásicos y emergentes."
+            ],
+            email: "gladys.toledo@uan.edu.mx",
+            skills: [
+                { title: "Artículos científicos", value: "30", percent: 90 },
+                { title: "Citas de sus artículos", value: "700", percent: 100 },
+                { title: "Capítulos de libros", value: "3", percent: 80 }
+            ]
+        }
+    },
+    {
+        img: "../images/team-8.jpg",
+        cardName: "M. en C. Ansonny Ojeda",
+        cardRole: "Responsable de Ventas y Atención a clientes",
+        modalId: "teamAnsonnyOjedaModal",
+        modal: {
+            fullName: "M. en C. Ansonny Jhovanny Ojeda Durán",
+            role: "Sistema de Gestión de Calidad < Responsable de Ventas y Atención a clientes",
+            bio: [
+                "M.C. Ansonny Jhovanny Ojeda Durán es Ingeniero Bioquímico con especialidad en Biotecnología y Maestro en Ciencias por CINVESTAV-IPN. Forma parte del equipo del Laboratorio Nacional para Investigación en Inocuidad Alimentaria (LANIIA), donde se desempeña como Operador Analítico y Responsable del Área de Ventas y Atención al Cliente."
+            ],
+            experienceText: "Su experiencia integra investigación científica, diagnóstico molecular, inocuidad alimentaria y asesoría técnica especializada, contribuyendo al desarrollo de soluciones analíticas confiables para el sector agroalimentario. Ha participado en proyectos de investigación, capacitación, divulgación científica y sistemas de gestión de inocuidad basados en HACCP, BPM y estándares internacionales de calidad. Su compromiso es brindar servicios analíticos con excelencia técnica, atención personalizada y respaldo científico, fortaleciendo la confianza de clientes e instituciones en la toma de decisiones fundamentadas en resultados precisos y oportunos.",
+            email: "",
+            skills: []
+        }
+    },
+    {
+        img: "../images/avatar.webp",
+        cardName: "M. en C. Mercedes Zambrano",
+        cardRole: "Auxiliar de Ventas y atención a clientes",
+        modalId: "teamMercedesZambranoModal",
+        modal: {
+            fullName: "M. en C. Mercedes Zambrano Soria",
+            role: "Sistema de Gestión de Calidad < Auxiliar de Ventas y atención a clientes",
+            bio: [
+                "Química Farmacobióloga y Maestra en Ciencias Biológico-Agropecuarias en el área de Ciencias Ambientales por la Universidad Autónoma de Nayarit. Experiencia en investigación relacionada con inocuidad alimentaria, contaminación ambiental, plaguicidas, metales pesados y contaminantes emergentes en productos agroalimentarios y ecosistemas acuáticos. Participa en proyectos de investigación multidisciplinarios, actividades de divulgación científica."
+            ],
+            experienceText: "Actualmente se desempeña como docente universitaria e integrante del Laboratorio Nacional para la Investigación en Inocuidad Alimentaria (LANIIA), Unidad Nayarit.",
+            email: "",
+            skills: []
+        }
+    },
+    {
+        img: "../images/avatar.webp",
+        cardName: "M. en C. Lucia Castillo",
+        cardRole: "Responsable de mantenimiento",
+        modalId: "teamLuciaCastilloModal",
+        modal: {
+            fullName: "M. en C. Lucia Amapola Castillo Pacheco",
+            role: "Sistema de Gestión de Calidad < Responsable de mantenimiento",
+            bio: [],
+            email: "",
+            experienceText: "",
+            skills: []
+        }
+    },
+    {
+        img: "../images/avatar.webp",
+        cardName: "M. en C. Ulises Mercado",
+        cardRole: "Auxiliar de mantenimiento",
+        modalId: "teamUlisesMercadoModal",
+        modal: {
+            fullName: "M. en C. Ulises Mercado Salgado",
+            role: "Sistema de Gestión de Calidad < Auxiliar de mantenimiento",
+            bio: [
+                "Estudiante de octavo semestre de doctorado en ciencias biológico agropecuarias - Universidad Autónoma de Nayarit.",
+                "Maestro en Ciencias en Biotecnología Genómica, por el Instituto Politécnico Nacional."
+            ],
+            experienceText: "Con experiencia en técnicas de biología molecular, extracción e identificación de ácidos nucleicos, diseño de primers, secuenciación y técnicas de cultivos celulares. Con experiencia en Propiedad Intelectual, en particular Evaluación y Desarrollo de Patentes en áreas Biotecnológica, Farmacéutica, Química y Ciencias de la Vida. Búsqueda de antecedentes y opiniones técnicas sobre la viabilidad de proyectos para obtener Patentes, Marcas, Modelos de Utilidad, Diseños Industriales y Derechos de Autor, desde la redacción técnica hasta el otorgamiento y mantenimiento de los derechos de Propiedad Intelectual.",
+            email: "",
+            skills: []
+        }
+    },
+    {
+        img: "../images/avatar.webp",
+        cardName: "Dr. Daniel Girón",
+        cardRole: "Capacitación continua",
+        modalId: "teamDanielGironModal",
+        modal: {
+            fullName: "Dr. Daniel Alberto Girón Pérez",
+            role: "Sistema de Gestión de Calidad < Capacitación continua",
+            bio: [],
+            email: "",
+            experienceText: "",
+            skills: []
+        }
+    },
+    {
+        img: "../images/avatar.webp",
+        cardName: "M.C.A. Mayra Canales",
+        cardRole: "Administración - Compras",
+        modalId: "teamMayraCanalesModal",
+        modal: {
+            fullName: "M. C. A. Violeta Canales Dennis",
+            role: "Sistema de Gestión de Calidad < Administración – Compras",
+            bio: [],
+            email: "",
+            experienceText: "",
+            skills: []
+        }
+    },
+    {
+        img: "../images/avatar.webp",
+        cardName: "M.C.L.V. Mirtha Pulido",
+        cardRole: "Administración",
+        modalId: "teamMirthaPulidoModal",
+        modal: {
+            fullName: "M.C.L.V. Mirtha Elena Pulido Muñoz",
+            role: "Sistema de Gestión de Calidad < Administración",
+            bio: [
+                "Maestra en Comunicación y Lenguajes Visuales por el Instituto para la Investigación en Comunicación y Cultura ICONOS. Colabora con el Laboratorio Nacional para la Investigación en Inocuidad Alimentaria (LANIIA-Nayarit) y es docente de la Licenciatura en Biomedicina Ambiental Traslacional de la Universidad Autónoma de Nayarit. Forma parte del Comité Editorial de la revista Bio Ciencias (ISSN: 2007-3380) y colabora en la revista de divulgación científica Pardalis. Sus intereses se orientan a la comunicación visual, la divulgación científica y la gestión editorial de publicaciones académicas, incluyendo la estructuración técnica de contenidos científica."
+            ]
+        }
+    },
+    {
+        img: "../images/avatar.webp",
+        cardName: "M.P.D. Anairis Ávila",
+        cardRole: "Administración",
+        modalId: "teamAnairisAvilaModal",
+        modal: {
+            fullName: "M.P.D. Anairis Sol Ávila Ángel",
+            role: "Sistema de Gestión de Calidad < Administración",
+            bio: [
+                "Es Maestra en Periodismo Digital por la Universidad de Guadalajara y Licenciada en Comunicación y Medios por la Universidad Autónoma de Nayarit."
+            ],
+            experienceText: "Se desempeñó como responsable de agenda de medios en la Dirección de Comunicación Institucional y Social de la Universidad Autónoma de Nayarit (UAN), y como Coordinadora de Divulgación y Difusión Científica en la Secretaría de Investigación y Posgrado de la misma institución. Actualmente está a cargo de la difusión y cobertura institucional de LANIIA Unidad Nayarit."
+        }
+    }
+];
 
     /* Calcula el retraso de la animación "wow fadeInUp" igual que el
        marcado original (el primer elemento no lleva delay, y aumenta
