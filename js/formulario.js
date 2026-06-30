@@ -2,7 +2,7 @@ document.getElementById('whatsappForm').addEventListener('submit', async functio
     e.preventDefault(); // Detiene el comportamiento de envío tradicional
 
     // 1. Configura la URL de tu Google Apps Script
-    const URL_GOOGLE_SCRIPT = "https://script.google.com/macros/s/AKfycbxwb2udULIiCxi10TrysMHgpySBheRFVfXoTTFW9CkXo_xmWHusQ8fzwYYy5mDbmjZwPA/exec";
+    const URL_GOOGLE_SCRIPT = "https://script.google.com/macros/s/AKfycbw5KfBZUWiT6YsK93db-gzE7Jog1SJTwYZE5yyuFw6zL1cqNGURlyNmvBVuhdh36uuQ9Q/exec";
 
     // 2. Extraer valores del HTML usando los IDs correspondientes
     const datos = {
