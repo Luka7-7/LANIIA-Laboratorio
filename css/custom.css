@@ -1,77 +1,18 @@
-/* ----------------------------------------------------------------------------------------
-* Author        : ljmedranov
-
-* ---------------------------------------------------------------------------------------- */
-/* Listado
-----------------------------------------------------------------------------------------
-01. VARIABLES GENERALES
-02. CSS en general
-03. css del header
-04. Hero css
-05. Scrolling Ticker css
-06. CSS acerca de 
-07. CSS nuestros servicios
-08. Css porque escogernos
-09. Css que hacemos
-10. caso de estudioss
-11. Intro Video css
-12. CSS nuestro trabajo
-13. CSS nuestros precios
-14. CSS preguntas
-15. CSS testimonios
-16. css blog
-17. Footer css
-18.acerca de nuestra pagina
-19. css servicios general
-20. css servicio simple
-21. css blog de archivo
-22. css blog sencillo
-23. css caso de estudio general
-24. css caso de estudio simple
-25. pagina de equipo
-26. pagina de equipo simple
-27. pagina precios
-28. página de testimonios
-29. css galeria de imagenes
-30. video galeria css
-31. pagina de preguntas
-32. pagina de contáctanos
-33. pagina de error 404
-34. Responsive css
+/*** 	 01. VARIABLES GENERALES	 ***/
 
 :root{
-	--primary-color				: #172C45;
-	--secondary-color			: #BEF1DE;
-	--bg-color					: #F8F8F8;
-	--text-color				: #45566A;
-	--accent-color				: #BEF1DE;
-	--white-color				: #FFFFFF;
+	--primary-color					: #172C45;
+	--secondary-color					: #cef2ef;
+	--bg-color						: #F8F8F8;
+	--text-color					: #026873;
+	--text-colorb					: #e9edf1;
+	--accent-color					: #027373;
+	--white-color					: #FFFFFF;
 	--divider-color				: #172C451A;
 	--dark-divider-color		: #FFFFFF1A;
-	--error-color				: rgb(230, 87, 87);
-	--default-font				: "Manrope", sans-serif;
-	--accent-font				: "Sora", sans-serif;
-}
-
--------------------------------------------------------------------------------------- */
-
-/************************************/
-/*** 	 01. VARIABLES GENERALES	  ***/
-/************************************/
-
-:root{
-	--primary-color				: #172C45;
-	--secondary-color			: #cef2ef;
-	--bg-color					: #F8F8F8;
-	--text-color				: #026873;
-	--text-colorb				: #e9edf1;
-	--accent-color				: #027373;
-	--white-color				: #FFFFFF;
-	--divider-color				: #172C451A;
-	--dark-divider-color		: #FFFFFF1A;
-	--error-color				: rgb(230, 87, 87);
-	--default-font				: "Manrope", sans-serif;
-	--accent-font				: "Sora", sans-serif;
+	--error-color					: rgb(230, 87, 87);
+	--default-font					: "Manrope", sans-serif;
+	--accent-font					: "Sora", sans-serif;
 }
 
 /************************************/
@@ -3243,12 +3184,14 @@ header.main-header .header-sticky.active{
 	cursor: none;
 	border-radius: 20px;
 	overflow: hidden;
+	aspect-ratio: 1 / 1.356;
 }
 
 .team-image img{
     width: 100%;
-	aspect-ratio: 1 / 1.356;
+    height: 100%;
     object-fit: cover;
+    object-position: center center;
 	transition: all 0.4s ease-in-out;
 }
 

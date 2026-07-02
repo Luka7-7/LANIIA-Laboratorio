@@ -17,7 +17,7 @@
        --------------------------------------------------------- */
 const teamMembers = [
     {
-        img: "../images/team-1.jpg",
+        img: "../images/author-1.jpg",
         cardName: "Dr. Ivan Girón",
         cardRole: "Fundador Signatario",
         modalId: "teamSingleModal",
@@ -38,7 +38,8 @@ const teamMembers = [
         }
     },
     {
-        img: "../images/team-3.jpg",
+        img: "../images/FOTOGRAFÍAS INTEGRANTES LANIIA/DRA. ADELA YOLANDA BUENO DURÁNjpg.jpg",
+        
         cardName: "Dra. Adela Bueno",
         cardRole: "Coordinación de operaciones analíticas",
         modalId: "teamAdelaBuenoModal",
@@ -59,7 +60,7 @@ const teamMembers = [
         }
     },
     {
-        img: "../images/team-4.jpg",
+        img: "../images/FOTOGRAFÍAS INTEGRANTES LANIIA/DR. FRANCISCO FABIÁN RAZURA CARMONA.jpg",
         cardName: "Dr. Francisco Razura",
         cardRole: "Administrador del Sistema de Gestión de Calidad",
         titleAttr: "Ver perfil de Dr. Francisco Razura",
@@ -68,13 +69,13 @@ const teamMembers = [
             fullName: "Dr. Francisco Fabián Razura Carmona",
             role: "Administrador del Sistema de Gestión de Calidad",
             bio: [],
-            email: "",
+            email: "fabian.razura@uan.edu.mx",
             experienceText: "",
             skills: []
         }
     },
     {
-        img: "../images/avatar.webp",
+        img: "../images/FOTOGRAFÍAS INTEGRANTES LANIIA/M.EN C. MIGDALIA SARAHY NAVIDAD MURRIETA.jpg",
         cardName: "Dra. Migdalia Navidad",
         cardRole: "Auxiliar del Sistema de Gestión de Calidad",
         modalId: "teamMigdaliaNavidadModal",
@@ -85,13 +86,13 @@ const teamMembers = [
                 "Ingeniera bioquímica y maestra en ciencias de los alimentos. Auxiliar del Sistema de Gestión de Calidad y procesos de acreditación, así como responsable de cromatografía del laboratorio LANIIA-Unidad Nayarit. Experiencia en el análisis de alimentos, desarrollo de alimentos con potencial probióticos, análisis cromatográficos y procesos de certificación/acreditación de sistemas de gestión y aseguramiento de la calidad.",
                 "Participación en congresos nacionales e internacionales, reconocida en el año 2020 como “Mujer SISMENEC” por la entidad mexicana de acreditación (ema ac.), miembro de Grupo ema Regional de Nayarit, miembro de la Asociación Mexicana de Ciencia de los Alimentos AMECA A.C y revisor transitorio de revistas nacionales e internacionales."
             ],
-            email: "",
+            email: "msnavidad@uan.edu.mx",
             experienceText: "",
             skills: []
         }
     },
     {
-        img: "../images/team-2.jpg",
+        img: "../images/FOTOGRAFÍAS INTEGRANTES LANIIA/Dra. Gladys Alejandra Toledo Ibarra.jpg",
         cardName: "Dra. Gladys Toledo",
         cardRole: "Administración - Coordinación",
         modalId: "teamGladysToledoModal",
@@ -114,7 +115,7 @@ const teamMembers = [
         }
     },
     {
-        img: "../images/team-8.jpg",
+        img: "../images/FOTOGRAFÍAS INTEGRANTES LANIIA/M. EN C. ANSONNY JHOVANNY OJEDA DURÁN.jpg",
         cardName: "M. en C. Ansonny Ojeda",
         cardRole: "Responsable de Ventas y Atención a clientes",
         modalId: "teamAnsonnyOjedaModal",
@@ -125,12 +126,12 @@ const teamMembers = [
                 "M.C. Ansonny Jhovanny Ojeda Durán es Ingeniero Bioquímico con especialidad en Biotecnología y Maestro en Ciencias por CINVESTAV-IPN. Forma parte del equipo del Laboratorio Nacional para Investigación en Inocuidad Alimentaria (LANIIA), donde se desempeña como Operador Analítico y Responsable del Área de Ventas y Atención al Cliente."
             ],
             experienceText: "Su experiencia integra investigación científica, diagnóstico molecular, inocuidad alimentaria y asesoría técnica especializada, contribuyendo al desarrollo de soluciones analíticas confiables para el sector agroalimentario. Ha participado en proyectos de investigación, capacitación, divulgación científica y sistemas de gestión de inocuidad basados en HACCP, BPM y estándares internacionales de calidad. Su compromiso es brindar servicios analíticos con excelencia técnica, atención personalizada y respaldo científico, fortaleciendo la confianza de clientes e instituciones en la toma de decisiones fundamentadas en resultados precisos y oportunos.",
-            email: "",
+            email: "ansonny.ojeda@uan.edu.mx",
             skills: []
         }
     },
     {
-        img: "../images/avatar.webp",
+        img: "../images/FOTOGRAFÍAS INTEGRANTES LANIIA/M.EN C. MERCEDES ZAMBRANO SORIA.jpg",
         cardName: "M. en C. Mercedes Zambrano",
         cardRole: "Auxiliar de Ventas y atención a clientes",
         modalId: "teamMercedesZambranoModal",
@@ -141,12 +142,12 @@ const teamMembers = [
                 "Química Farmacobióloga y Maestra en Ciencias Biológico-Agropecuarias en el área de Ciencias Ambientales por la Universidad Autónoma de Nayarit. Experiencia en investigación relacionada con inocuidad alimentaria, contaminación ambiental, plaguicidas, metales pesados y contaminantes emergentes en productos agroalimentarios y ecosistemas acuáticos. Participa en proyectos de investigación multidisciplinarios, actividades de divulgación científica."
             ],
             experienceText: "Actualmente se desempeña como docente universitaria e integrante del Laboratorio Nacional para la Investigación en Inocuidad Alimentaria (LANIIA), Unidad Nayarit.",
-            email: "",
+            email: "mercedes.zambrano@uan.edu.mx",
             skills: []
         }
     },
     {
-        img: "../images/avatar.webp",
+        img: "../images/FOTOGRAFÍAS INTEGRANTES LANIIA/M.EN C. LUCÍA AMAPOLA CASTILLO PACHECO.jpg",
         cardName: "M. en C. Lucia Castillo",
         cardRole: "Responsable de mantenimiento",
         modalId: "teamLuciaCastilloModal",
@@ -154,13 +155,13 @@ const teamMembers = [
             fullName: "M. en C. Lucia Amapola Castillo Pacheco",
             role: "Sistema de Gestión de Calidad < Responsable de mantenimiento",
             bio: [],
-            email: "",
+            email: "lucia.castillo@uan.edu.mx",
             experienceText: "",
             skills: []
         }
     },
     {
-        img: "../images/avatar.webp",
+        img: "../images/FOTOGRAFÍAS INTEGRANTES LANIIA/M.EN C. ULISES MERCADO SALGADO.jpg",
         cardName: "M. en C. Ulises Mercado",
         cardRole: "Auxiliar de mantenimiento",
         modalId: "teamUlisesMercadoModal",
@@ -177,7 +178,7 @@ const teamMembers = [
         }
     },
     {
-        img: "../images/avatar.webp",
+        img: "../images/FOTOGRAFÍAS INTEGRANTES LANIIA/DR. DANIEL ALBERTO GIRÓN PÉREZ.jpg",
         cardName: "Dr. Daniel Girón",
         cardRole: "Capacitación continua",
         modalId: "teamDanielGironModal",
@@ -185,13 +186,13 @@ const teamMembers = [
             fullName: "Dr. Daniel Alberto Girón Pérez",
             role: "Sistema de Gestión de Calidad < Capacitación continua",
             bio: [],
-            email: "",
+            email: "Daniel.giron@uan.edu.mx",
             experienceText: "",
             skills: []
         }
     },
     {
-        img: "../images/avatar.webp",
+        img: "../images/FOTOGRAFÍAS INTEGRANTES LANIIA/M.EN C. MAYRA VIOLETA CANALES DENNIS .jpg",
         cardName: "M.C.A. Mayra Canales",
         cardRole: "Administración - Compras",
         modalId: "teamMayraCanalesModal",
@@ -199,7 +200,7 @@ const teamMembers = [
             fullName: "M. C. A. Violeta Canales Dennis",
             role: "Sistema de Gestión de Calidad < Administración – Compras",
             bio: [],
-            email: "",
+            email: "mayra.canales@uan.edu.mx",
             experienceText: "",
             skills: []
         }
@@ -214,7 +215,8 @@ const teamMembers = [
             role: "Sistema de Gestión de Calidad < Administración",
             bio: [
                 "Maestra en Comunicación y Lenguajes Visuales por el Instituto para la Investigación en Comunicación y Cultura ICONOS. Colabora con el Laboratorio Nacional para la Investigación en Inocuidad Alimentaria (LANIIA-Nayarit) y es docente de la Licenciatura en Biomedicina Ambiental Traslacional de la Universidad Autónoma de Nayarit. Forma parte del Comité Editorial de la revista Bio Ciencias (ISSN: 2007-3380) y colabora en la revista de divulgación científica Pardalis. Sus intereses se orientan a la comunicación visual, la divulgación científica y la gestión editorial de publicaciones académicas, incluyendo la estructuración técnica de contenidos científica."
-            ]
+            ],
+            email: "mirtha.pulido@uan.edu.mx"
         }
     },
     {
@@ -228,6 +230,7 @@ const teamMembers = [
             bio: [
                 "Es Maestra en Periodismo Digital por la Universidad de Guadalajara y Licenciada en Comunicación y Medios por la Universidad Autónoma de Nayarit."
             ],
+            email: "sol.angel@uan.edu.mx",
             experienceText: "Se desempeñó como responsable de agenda de medios en la Dirección de Comunicación Institucional y Social de la Universidad Autónoma de Nayarit (UAN), y como Coordinadora de Divulgación y Difusión Científica en la Secretaría de Investigación y Posgrado de la misma institución. Actualmente está a cargo de la difusión y cobertura institucional de LANIIA Unidad Nayarit."
         }
     }
@@ -308,7 +311,9 @@ function buildModalHTML(member) {
                         <img src="../images/icon-mail.svg" alt="Email" style="width: 18px; height: 18px;" onerror="this.style.display='none'">
                     </div>
                     <div class="team-contact-content">
-                        <h4 style="margin: 0; font-size: 1rem; font-weight: 500; color: #555; word-break: break-all;">${m.email}</h4>
+                        <h4 style="margin: 0; font-size: 1rem; font-weight: 500; color: #555; word-break: break-all;">
+                            <a href="mailto:${m.email}" style="color: inherit; text-decoration: none;">${m.email}</a>
+                        </h4>
                     </div>
                 </div>
             </div>`
