@@ -206,7 +206,7 @@ const teamMembers = [
         }
     },
     {
-        img: "../images/FOTOGRAFÍAS INTEGRANTES LANIIA/2.jpeg",
+        img: "../images/FOTOGRAFÍAS INTEGRANTES LANIIA/1.jpeg",
         cardName: "M.C.L.V. Mirtha Pulido",
         cardRole: "Administración",
         modalId: "teamMirthaPulidoModal",
@@ -220,7 +220,7 @@ const teamMembers = [
         }
     },
     {
-        img: "../images/FOTOGRAFÍAS INTEGRANTES LANIIA/1.jpeg",
+        img: "../images/FOTOGRAFÍAS INTEGRANTES LANIIA/2.jpeg",
         cardName: "M.P.D. Anairis Ávila",
         cardRole: "Administración",
         modalId: "teamAnairisAvilaModal",
