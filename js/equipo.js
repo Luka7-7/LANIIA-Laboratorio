@@ -254,14 +254,17 @@ const teamMembers = [
         const delayAttr = delay ? ` data-wow-delay="${delay}"` : "";
 
         const hasModal = !!member.modalId;
+        // Sin "href" no hay URL que el navegador muestre en la barra de estado
+        // (evita el popover "javascript:void(0)"), pero mantenemos
+        // accesibilidad con role="button" y tabindex para navegación por teclado.
         const linkAttrs = hasModal
-            ? `href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#${member.modalId}"`
+            ? `role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#${member.modalId}"`
             : `href="#"`;
         const titleAttr = member.titleAttr ? ` title="${member.titleAttr}"` : "";
 
         return `
-        <div class="col-lg-3 col-md-6">
-            <div class="team-item wow fadeInUp"${delayAttr}>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="team-item "${delayAttr}>
                 <div class="team-image">
                     <a ${linkAttrs} data-cursor-text="View"${titleAttr}>
                         <figure>
