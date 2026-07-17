@@ -127,4 +127,4 @@ Av. Emilio M. González, Colonia Ciudad del Conocimiento, 63173, Tepic, Nayarit.
 
 Proyecto desarrollado para la <strong>Universidad Autónoma de Nayarit (UAN)</strong>
 
-</div>
+
