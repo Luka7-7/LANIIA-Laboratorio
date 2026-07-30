@@ -60,7 +60,6 @@ El envío del formulario se gestiona de forma serverless conectando la web con *
 1. El usuario completa el formulario en la web.
 2. `formulario.js` procesa los datos y envía una petición `POST` en formato JSON al endpoint de Apps Script.
 3. Google Apps Script intercepta los datos, añade una nueva fila con la marca de tiempo (timestamp) en la hoja de cálculo y envía una notificación automática por email a **ventas.laniia@gmail.com**.
-4. El script responde con un JSON (`{"status": "success"}`) para confirmar la recepción.
 
 ---
 
